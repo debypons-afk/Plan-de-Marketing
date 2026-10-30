@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan de Marketing Digital - Panificadora La Victoria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#1b5e20',
+              darkgreen: '#0e3a13',
+              lightgreen: '#e8f5e9',
+              gold: '#d4af37',
+              accent: '#f9a825',
+              bg: '#fbfbf8',
+              card: '#ffffff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f7f9f7; color: #2d3748; }
+    h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-stone-100 text-stone-800 antialiased min-h-screen">
+
+  <!-- Header / Hero Section -->
+  <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 text-white border-b-4 border-amber-500 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center space-x-6">
+          <!-- Logo container -->
+          <div class="bg-white p-3 rounded-2xl shadow-lg border-2 border-amber-400 transform hover:scale-105 transition duration-300">
+            <div class="w-28 h-20 flex items-center justify-center bg-stone-50 rounded-lg overflow-hidden border border-amber-200">
+              <div class="text-center p-1">
+                <span class="block text-2xl font-black text-emerald-900 tracking-tighter leading-none" style="font-family: 'Playfair Display', serif;">La Victoria</span>
+                <span class="block text-[10px] uppercase font-bold text-amber-700 tracking-widest mt-1 bg-amber-100 py-0.5 px-1 rounded border border-amber-300">PANIFICADORA</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs font-semibold uppercase tracking-wider mb-2 border border-amber-500/30">
+              Plan Estratégico de Marketing Digital 2026
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-amber-100">
+              PANADERÍA "LA VICTORIA"
+            </h1>
+            <p class="text-emerald-200 text-sm mt-1 flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-amber-400"></i> Av. Choya al 2000, Zona Norte, Catamarca
+              <span class="mx-1">•</span>
+              <a href="https://panaderialavictoria.mitiendanube.com" target="_blank" class="text-amber-300 hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-globe"></i> Tienda Online
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="text-right bg-emerald-900/60 p-4 rounded-xl border border-emerald-700/50 text-xs text-emerald-100">
+          <p><span class="font-bold text-amber-300">Autoras:</span> Anabel Rodríguez & Débora Córdoba</p>
+          <p><span class="font-bold text-amber-300">Fecha:</span> Catamarca, Octubre 2026</p>
+          <p><span class="font-bold text-amber-300">Última Entrevista:</span> 13 de Octubre de 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 space-y-10">
+
+    <!-- Navigation Tabs -->
+    <div class="flex flex-wrap gap-2 border-b border-stone-300 pb-3">
+      <button onclick="switchTab('resumen')" id="tab-resumen" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-emerald-800 text-white shadow-md">
+        <i class="fa-solid fa-file-text mr-2"></i> Diagnóstico & Canvas
+      </button>
+      <button onclick="switchTab('estrategia')" id="tab-estrategia" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-white text-stone-700 hover:bg-emerald-50 shadow-sm border border-stone-200">
+        <i class="fa-solid fa-bullseye mr-2"></i> Objetivos & Buyer Persona
+      </button>
+      <button onclick="switchTab('cronograma')" id="tab-cronograma" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-white text-stone-700 hover:bg-emerald-50 shadow-sm border border-stone-200">
+        <i class="fa-solid fa-calendar-days mr-2"></i> Presupuesto & Plan de Acción
+      </button>
+      <button onclick="switchTab('formatos')" id="tab-formatos" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-amber-600 text-white hover:bg-amber-700 shadow-md">
+        <i class="fa-solid fa-mobile-screen-button mr-2"></i> Diseños Redes & Mockups
+      </button>
+    </div>
+
+    <!-- TAB 1: DIAGNÓSTICO Y MODELO CANVAS -->
+    <section id="sec-resumen" class="space-y-8">
+      <!-- Ficha del Comercio -->
+      <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-emerald-700">
+        <h2 class="text-2xl font-bold text-emerald-950 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-store text-emerald-700"></i> Descripción del Negocio & Diagnóstico
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6 text-sm">
+          <div class="space-y-3 bg-stone-50 p-4 rounded-xl border border-stone-200">
+            <p><strong>Ubicación Estratégica:</strong> Av. Choya al 2000 (frente a la rotonda), Zona Norte, San Fernando del Valle de Catamarca. Estacionamiento propio, rápido acceso y conectividad con 3 líneas de colectivos.</p>
+            <p><strong>Línea de Productos:</strong> Panadería tradicional con elaboración diaria y sandwichería anexa. Subproductos principales: Sándwiches de miga (pack x10), Prepizzas artesanales (pack x2), Pan lactal integral de masa madre (600g) y Repostería.</p>
+          </div>
+          <div class="space-y-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+            <p class="font-bold text-emerald-900 mb-1"><i class="fa-solid fa-chart-line text-emerald-700"></i> Presencia Digital Actual:</p>
+            <ul class="list-disc list-inside space-y-1 text-stone-700">
+              <li>Tienda Online activa en <strong>Tiendanube</strong> con Pago Nube.</li>
+              <li>Instagram (<code>@lavictoria.pan</code>): <strong>648 seguidores</strong>.</li>
+              <li>Página de Facebook: <strong>1.100 seguidores</strong>.</li>
+              <li>Canal de pedidos directos por <strong>WhatsApp Business</strong> y perfil activo en Google Maps.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modelo Canvas Interactivo / Grilla -->
+      <div class="bg-white rounded-2xl p-6 shadow-md border border-stone-200">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-emerald-950">Modelo Canvas Personalizado</h2>
+            <p class="text-sm text-stone-500">Propuesta de Valor B2C y B2B para Panificadora La Victoria</p>
+          </div>
+          <span class="px-3 py-1 bg-emerald-100 text-emerald-800 font-semibold rounded-full text-xs">Módulo 1</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- B2C Card -->
+          <div class="bg-gradient-to-br from-stone-50 to-emerald-50/30 p-6 rounded-xl border-2 border-emerald-600/30 relative shadow-sm">
+            <div class="absolute -top-3 right-4 bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Canal Minorista (B2C)
+            </div>
+            <h3 class="text-xl font-bold text-emerald-900 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-basket-shopping text-emerald-700"></i> Consumidor Final
+            </h3>
+            <p class="text-stone-700 text-sm leading-relaxed mb-4">
+              "Del horno a tu mesa": Pan del día recién horneado, frescura garantizada y compra cómoda gracias al estacionamiento exclusivo y atención cercana en la Zona Norte.
+            </p>
+            <div class="bg-white p-3 rounded-lg border border-emerald-100 text-xs space-y-1">
+              <p class="font-semibold text-emerald-800">Subproductos Estrella:</p>
+              <p class="text-stone-600">• Sándwiches de Miga (Pack x10) | Prepizzas (Pack x2) | Pan Lactal Integral de Masa Madre (600g)</p>
+            </div>
+          </div>
+
+          <!-- B2B Card -->
+          <div class="bg-gradient-to-br from-stone-50 to-amber-50/40 p-6 rounded-xl border-2 border-amber-600/30 relative shadow-sm">
+            <div class="absolute -top-3 right-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Canal Mayorista (B2B)
+            </div>
+            <h3 class="text-xl font-bold text-amber-950 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-truck-ramp-box text-amber-600"></i> Comercio Local
+            </h3>
+            <p class="text-stone-700 text-sm leading-relaxed mb-4">
+              Abastecimiento regular y puntual de pan fresco para comercios locales (sandwicherías, rotiserías, pizzerías, cafeterías), con pedidos programados vía WhatsApp/formulario y retiro ágil sin demoras.
+            </p>
+            <div class="bg-white p-3 rounded-lg border border-amber-100 text-xs space-y-1">
+              <p class="font-semibold text-amber-800">Ventaja Competitiva B2B:</p>
+              <p class="text-stone-600">• Sin conservantes, logística puntual, opción innovadora de pan ultracongelado para hornear en el comercio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: OBJETIVOS Y BUYER PERSONAS -->
+    <section id="sec-estrategia" class="hidden space-y-8">
+      <!-- Objetivos SMART -->
+      <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-700">
+        <h2 class="text-2xl font-bold text-emerald-950 mb-6 flex items-center gap-2">
+          <i class="fa-solid fa-bullseye text-emerald-700"></i> Objetivos Principales (SMART)
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-stone-50 p-5 rounded-xl border border-emerald-200 hover:shadow-md transition">
+            <div class="w-10 h-10 bg-emerald-800 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-3">1</div>
+            <h3 class="font-bold text-emerald-900 text-base mb-2">Reconocimiento Geolocalizado</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Aumentar Instagram de 648 a <strong>745 seguidores (+15%)</strong> y Facebook de 1.100 a <strong>1.155 (+5%)</strong>, incrementando un 50% el alcance mensual en Meta Business Suite (con +70% de audiencia en Catamarca Capital) al 31/12/2026.
+            </p>
+          </div>
+
+          <div class="bg-stone-50 p-5 rounded-xl border border-emerald-200 hover:shadow-md transition">
+            <div class="w-10 h-10 bg-emerald-800 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-3">2</div>
+            <h3 class="font-bold text-emerald-900 text-base mb-2">Ventas Online & Subproductos</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Alcanzar <strong>30 pedidos mensuales de subproductos</strong> (packs de miga, prepizzas, pan lactal) procesados entre la tienda online y WhatsApp, incrementando un <strong>30% la facturación</strong> de subproductos respecto a Septiembre 2026.
+            </p>
+          </div>
+
+          <div class="bg-stone-50 p-5 rounded-xl border border-emerald-200 hover:shadow-md transition">
+            <div class="w-10 h-10 bg-amber-600 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-3">3</div>
+            <h3 class="font-bold text-emerald-900 text-base mb-2">Desarrollo Canal Mayorista (B2B)</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Contactar a <strong>20 comercios de Zona Norte</strong> presentando catálogo, lista de precios y muestras, logrando convertir a 5 en clientes semanales recurrentes al 31/03/2027 (meta intermedia: 2 clientes al 31/12/2026).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buyer Personas -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- B2B Marcela -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-amber-600">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-2xl font-bold">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-amber-600 uppercase">Buyer Persona B2B</span>
+              <h3 class="text-xl font-bold text-stone-800">Marcela (42 años)</h3>
+              <p class="text-xs text-stone-500">Propietaria de Sandwichería / Rotisería de Barrio</p>
+            </div>
+          </div>
+          <div class="space-y-2 text-xs text-stone-700 border-t border-stone-100 pt-3">
+            <p><strong>Ubicación:</strong> Zona Norte, Catamarca Capital (&lt; 5 km de Av. Choya).</p>
+            <p><strong>Intereses:</strong> Pan fresco diario puntual, calidad constante, precio competitivo por volumen, pedidos ágiles por WhatsApp.</p>
+            <p><strong>Puntos de Dolor:</strong> Riesgo de cambiar de proveedor. Requiere muestras previas y prueba sin compromiso.</p>
+          </div>
+        </div>
+
+        <!-- B2C Silvana -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-emerald-600">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700 text-2xl font-bold">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-emerald-600 uppercase">Buyer Persona B2C</span>
+              <h3 class="text-xl font-bold text-stone-800">Silvana (36 años)</h3>
+              <p class="text-xs text-stone-500">Empleada Pública & Madre de dos niños</p>
+            </div>
+          </div>
+          <div class="space-y-2 text-xs text-stone-700 border-t border-stone-100 pt-3">
+            <p><strong>Ubicación:</strong> Zona Norte de la Capital.</p>
+            <p><strong>Intereses:</strong> Soluciones prácticas para desayunos, meriendas y reuniones (miga, prepizzas). Valora la agilidad y comodidad.</p>
+            <p><strong>Puntos de Dolor:</strong> Falta de tiempo. Busca realizar pedidos online y retirar rápidamente sin demoras de estacionamiento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: CRONOGRAMA, PRESUPUESTO Y CASO DE CAMPO -->
+    <section id="sec-cronograma" class="hidden space-y-8">
+      <!-- Presupuesto -->
+      <div class="bg-white rounded-2xl p-6 shadow-md border-l-4 border-emerald-800">
+        <h2 class="text-2xl font-bold text-emerald-950 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-wallet text-emerald-700"></i> Presupuesto de Publicidad Digital (Mes 1)
+        </h2>
+        <div class="grid md:grid-cols-3 gap-4 text-center">
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200">
+            <p class="text-xs text-emerald-800 font-bold uppercase">Campaña B2C (Meta Ads)</p>
+            <p class="text-2xl font-black text-emerald-900 mt-1">$21.000 ARS</p>
+            <p class="text-[11px] text-stone-500 mt-1">$3.000 ARS/día x 7 días (Tráfico a Tienda / WA)</p>
+          </div>
+          <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+            <p class="text-xs text-amber-800 font-bold uppercase">Campaña B2B (Leads WhatsApp)</p>
+            <p class="text-2xl font-black text-amber-900 mt-1">$21.000 ARS</p>
+            <p class="text-[11px] text-stone-500 mt-1">$3.000 ARS/día x 7 días (Captación Comercios)</p>
+          </div>
+          <div class="bg-stone-800 text-white p-4 rounded-xl">
+            <p class="text-xs text-amber-300 font-bold uppercase">Total Inversión Ads</p>
+            <p class="text-2xl font-black text-amber-400 mt-1">$42.000 ARS</p>
+            <p class="text-[11px] text-stone-300 mt-1">+ Impresión listas de precios & Kit muestras</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso de Campo Destacado (Semana 3) -->
+      <div class="bg-amber-50/60 rounded-2xl p-6 shadow-md border-2 border-amber-300">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="p-2 bg-amber-500 text-white rounded-lg"><i class="fa-solid fa-clipboard-check text-xl"></i></span>
+          <h3 class="text-xl font-bold text-amber-950">Resultado Práctico y Solución Estratégica B2B</h3>
+        </div>
+        <div class="text-xs sm:text-sm text-stone-700 leading-relaxed space-y-3">
+          <p>
+            <strong>Encuesta de Satisfacción (6 comercios sondeados):</strong> 5 comercios mostraron conformidad total con el pan francés y pan negro. 1 comercio expresó reparos basados estrictamente en margen de costos para reventa, aunque elogió la alta calidad del producto.
+          </p>
+          <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-sm">
+            <p class="font-bold text-emerald-900 mb-1"><i class="fa-solid fa-lightbulb text-amber-500"></i> Innovación de Propuesta: Pan Congelado sin Conservantes</p>
+            <p class="text-stone-600">
+              Para optimizar costos sin resignar calidad ni margen, se propuso proveer el <strong>pan en formato congelado</strong> para horneado final directo en el comercio. Esto garantiza pan 100% fresco del día al momento de la venta, mayor vida útil y reducción de desperdicio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: MOCKUPS Y FORMATOS VISUALES -->
+    <section id="sec-formatos" class="space-y-10">
+      
+      <!-- Presentación de la Identidad Visual -->
+      <div class="bg-emerald-900 text-white p-6 rounded-2xl shadow-lg border-b-4 border-amber-400">
+        <div class="max-w-3xl">
+          <span class="text-amber-400 font-bold uppercase tracking-wider text-xs">Diseño & Formatos Adaptados</span>
+          <h2 class="text-2xl font-bold text-white mt-1">Línea Gráfica Oficial "La Victoria"</h2>
+          <p class="text-emerald-100 text-sm mt-2">
+            Hemos adaptado el diseño con una paleta sobria basada en los verdes institucionales del logo, detalles en dorado trigo y fondos cremas suaves.
+          </p>
+        </div>
+      </div>
+
+      <!-- MOCKUPS DE REDES SOCIALES -->
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <!-- 1. INSTAGRAM STORY / MOBILE MOCKUP -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 flex flex-col items-center">
+          <div class="w-full flex justify-between items-center mb-4">
+            <span class="text-xs font-bold bg-purple-100 text-purple-800 px-3 py-1 rounded-full"><i class="fa-brands fa-instagram"></i> Instagram Story (9:16)</span>
+            <span class="text-xs text-stone-400">1080 x 1920 px</span>
+          </div>
+
+          <!-- Phone Frame Mockup -->
+          <div class="w-[280px] bg-black rounded-[40px] p-3 shadow-2xl border-4 border-stone-800 relative">
+            <!-- Camera Notch -->
+            <div class="w-28 h-4 bg-black rounded-b-xl mx-auto mb-2 absolute top-3 left-1/2 -translate-x-1/2 z-20"></div>
+
+            <!-- Screen Content -->
+            <div class="bg-emerald-950 rounded-[32px] overflow-hidden text-white pt-6 pb-4 px-3 relative border border-emerald-800">
+              
+              <!-- Canvas Design Story -->
+              <div class="bg-[#fbfbf6] rounded-2xl p-4 text-stone-800 space-y-3 border border-amber-200 text-center shadow-inner">
+                <!-- Header Logo -->
+                <div class="flex justify-center my-1">
+                  <div class="border border-emerald-800 rounded-lg p-1 px-3 bg-white shadow-sm">
+                    <span class="font-black text-emerald-900 text-xs block" style="font-family:'Playfair Display'">La Victoria</span>
+                    <span class="text-[7px] text-amber-700 tracking-widest uppercase block">PANIFICADORA</span>
+                  </div>
+                </div>
+
+                <!-- Main Phrase -->
+                <div class="py-2">
+                  <p class="text-xs uppercase font-extrabold text-emerald-900 tracking-wide">Disfruta cada día</p>
+                  <p class="text-lg font-serif font-bold text-amber-800 italic leading-none">con tu desayuno</p>
+                </div>
+
+                <!-- Product Showcase Image Box -->
+                <div class="bg-stone-200 rounded-xl h-36 overflow-hidden relative border border-stone-300 shadow">
+                  <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Pan Artesanal" class="w-full h-full object-cover">
+                  <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-emerald-950/80 to-transparent p-2 text-left">
+                    <span class="text-[9px] text-amber-300 font-bold block">100% Masa Madre</span>
+                    <span class="text-[8px] text-white">Pan Lactal Integral (600g)</span>
+                  </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="bg-emerald-800 text-white rounded-lg py-2 px-3 text-[10px] font-bold shadow hover:bg-emerald-900 flex items-center justify-center gap-1">
+                  <i class="fa-brands fa-whatsapp text-emerald-300"></i> ¡Hacé tu pedido por WhatsApp!
+                </div>
+
+                <p class="text-[9px] text-stone-500">@lavictoria.pan • Av. Choya 2000</p>
+              </div>
+
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 mt-4 text-center">Optimizado para historias, Reels e interacciones rápidas.</p>
+        </div>
+
+        <!-- 2. INSTAGRAM / FACEBOOK SQUARE POST (1:1) -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 flex flex-col items-center">
+          <div class="w-full flex justify-between items-center mb-4">
+            <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full"><i class="fa-brands fa-square-instagram"></i> Post Cuadrado (1:1)</span>
+            <span class="text-xs text-stone-400">1080 x 1080 px</span>
+          </div>
+
+          <!-- Canvas Design Square -->
+          <div class="w-full max-w-[320px] aspect-square bg-gradient-to-b from-[#f9f8f3] to-[#efede3] rounded-xl p-4 border-2 border-emerald-800/20 shadow-md flex flex-col justify-between relative overflow-hidden">
+            <!-- Background Wheat Accent -->
+            <div class="absolute -right-8 -bottom-8 opacity-10 text-emerald-900 text-9xl">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+
+            <!-- Top Header -->
+            <div class="flex justify-between items-start">
+              <div class="bg-emerald-900 text-white p-2 rounded-lg text-left shadow">
+                <p class="text-[10px] font-black tracking-wider uppercase text-amber-300">La Victoria</p>
+                <p class="text-[7px] text-emerald-200">PANIFICADORA</p>
+              </div>
+              <span class="bg-amber-500 text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow">PACK PROMO</span>
+            </div>
+
+            <!-- Middle Text & Image -->
+            <div class="my-2 text-center z-10">
+              <h4 class="text-xl font-extrabold text-emerald-950 leading-tight" style="font-family: 'Playfair Display'">
+                El ANTOJO<br><span class="text-amber-800 italic">tiene nombre</span>
+              </h4>
+              
+              <div class="mt-2 rounded-lg overflow-hidden border-2 border-emerald-800/30 shadow-md h-28 relative">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Sandwiches de Miga" class="w-full h-full object-cover">
+                <div class="absolute top-1 right-1 bg-emerald-950/80 text-amber-300 text-[8px] font-bold px-1.5 py-0.5 rounded">
+                  Pack x10 Miga
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-emerald-900 text-emerald-100 p-2 rounded-lg text-center z-10">
+              <p class="text-[10px] font-bold text-amber-300">📍 Av. Choya 2254 Local 1</p>
+              <p class="text-[8px] text-emerald-200">Estacionamiento propio • Delivery B2C</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-stone-500 mt-4 text-center">Diseño optimizado para feed de Instagram y Facebook.</p>
+        </div>
+
+        <!-- 3. FACEBOOK HORIZONTAL BANNER / B2B AD -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 flex flex-col items-center">
+          <div class="w-full flex justify-between items-center mb-4">
+            <span class="text-xs font-bold bg-blue-100 text-blue-800 px-3 py-1 rounded-full"><i class="fa-brands fa-facebook"></i> Post Horizontal B2B</span>
+            <span class="text-xs text-stone-400">1200 x 630 px</span>
+          </div>
+
+          <!-- Canvas Design Horizontal Banner -->
+          <div class="w-full max-w-[320px] h-[200px] bg-emerald-950 text-white rounded-xl p-3 border-2 border-amber-500/40 shadow-md flex justify-between relative overflow-hidden">
+            <!-- Left Side Content -->
+            <div class="w-3/5 flex flex-col justify-between z-10">
+              <div>
+                <span class="text-[8px] bg-amber-500 text-emerald-950 font-bold px-1.5 py-0.5 rounded uppercase">Especial Comercios B2B</span>
+                <h4 class="text-sm font-bold text-amber-100 mt-1 leading-snug">
+                  ¿Tenés una sandwichería o rotisería?
+                </h4>
+                <p class="text-[9px] text-emerald-200 mt-1">
+                  Surtido diario de pan fresco o congelado directo a tu negocio.
+                </p>
+              </div>
+
+              <div class="space-y-1">
+                <div class="flex items-center gap-1 text-[8px] text-amber-300">
+                  <i class="fa-solid fa-check"></i> Precios especiales por volumen
+                </div>
+                <div class="flex items-center gap-1 text-[8px] text-amber-300">
+                  <i class="fa-solid fa-check"></i> Muestras gratis sin compromiso
+                </div>
+              </div>
+
+              <button class="bg-amber-500 text-emerald-950 text-[9px] font-bold py-1 px-2 rounded hover:bg-amber-400 w-fit">
+                Solicitar Lista B2B
+              </button>
+            </div>
+
+            <!-- Right Side Image Overlay -->
+            <div class="w-2/5 relative rounded-lg overflow-hidden border border-emerald-700">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Pan para Comercio" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-emerald-900/30"></div>
+            </div>
+          </div>
+
+          <p class="text-xs text-stone-500 mt-4 text-center">Banner para anuncios de captación de clientes potenciales B2B.</p>
+        </div>
+
+      </div>
+
+      <!-- VISTA SMARTPHONE (MOCKUP INTERACTIVO SIMULADO) -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl border border-stone-200">
+        <div class="max-w-2xl mx-auto text-center mb-6">
+          <h3 class="text-2xl font-bold text-emerald-950">Previsualización en Pantalla Móvil</h3>
+          <p class="text-xs text-stone-500">Así es como la comunidad de Catamarca visualiza la marca en sus teléfonos</p>
+        </div>
+
+        <div class="max-w-sm mx-auto bg-stone-900 rounded-[3rem] p-4 shadow-2xl border-4 border-stone-700">
+          <!-- Mobile Speaker/Camera -->
+          <div class="w-32 h-4 bg-stone-800 rounded-full mx-auto mb-3"></div>
+
+          <!-- Mobile Inner Screen -->
+          <div class="bg-white rounded-[2rem] overflow-hidden text-stone-800 text-xs shadow-inner">
+            <!-- Instagram Header -->
+            <div class="px-4 py-3 bg-stone-50 border-b border-stone-200 flex justify-between items-center">
+              <span class="font-bold text-stone-800 text-sm">lavictoria.pan</span>
+              <i class="fa-solid fa-ellipsis text-stone-600"></i>
+            </div>
+
+            <!-- Instagram Post Image -->
+            <div class="bg-emerald-900 p-4 text-center text-white relative">
+              <div class="bg-[#faf9f5] text-stone-800 p-4 rounded-xl border border-amber-300 shadow">
+                <p class="text-[10px] text-emerald-900 font-bold uppercase tracking-widest">Panaderia La Victoria</p>
+                <h5 class="text-base font-serif font-bold text-amber-900 my-1">¡Frescura todos los días!</h5>
+                <p class="text-[10px] text-stone-600 mb-2">Pasá por Av. Choya 2000 o pedí por WhatsApp</p>
+                <div class="bg-emerald-800 text-white py-1.5 px-3 rounded-lg text-[10px] font-bold inline-block">
+                  Ver Catálogo en Tiendanube
+                </div>
+              </div>
+            </div>
+
+            <!-- Instagram Action Bar -->
+            <div class="px-4 py-2 flex justify-between items-center border-t border-stone-100 text-lg">
+              <div class="flex gap-3 text-emerald-900">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+              <i class="fa-regular fa-bookmark text-stone-600"></i>
+            </div>
+
+            <!-- Instagram Caption -->
+            <div class="px-4 pb-4 text-[11px] space-y-1">
+              <p><strong>648 Me gusta</strong></p>
+              <p><strong>lavictoria.pan</strong> ¿Ya probaste nuestros sándwiches de miga? 🥪 Hacé tu pedido online y retiralo sin demoras. link en bio! 👇</p>
+              <p class="text-stone-400 text-[9px]">Ver los 18 comentarios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-950 text-emerald-300 border-t-4 border-amber-500 py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs space-y-2">
+      <p class="font-bold text-amber-400">Panificadora La Victoria • Plan de Marketing Digital 2026</p>
+      <p class="text-emerald-400">Anabel Rodríguez y Débora Gabriela Córdoba — Catamarca, Argentina</p>
+    </div>
+  </footer>
+
+  <!-- Script for Tabs -->
+  <script>
+    function switchTab(tabName) {
+      // Hide all sections
+      document.getElementById('sec-resumen').classList.add('hidden');
+      document.getElementById('sec-estrategia').classList.add('hidden');
+      document.getElementById('sec-cronograma').classList.add('hidden');
+      document.getElementById('sec-formatos').classList.add('hidden');
+
+      // Reset button styles
+      const tabs = ['resumen', 'estrategia', 'cronograma', 'formatos'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-' + t);
+        if (btn) {
+          btn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-white text-stone-700 hover:bg-emerald-50 shadow-sm border border-stone-200";
+        }
+      });
+
+      // Show active section
+      document.getElementById('sec-' + tabName).classList.remove('hidden');
+
+      // Active button style
+      const activeBtn = document.getElementById('tab-' + tabName);
+      if (tabName === 'formatos') {
+        activeBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-amber-600 text-white shadow-md";
+      } else {
+        activeBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-emerald-800 text-white shadow-md";
+      }
+    }
+  </script>
+</body>
+</html>
+```eof
+
+He maquetado la presentación completa con la identidad visual adaptada a la panadería (tonos verde institucional `#1b5e20`, detalles dorados y cremas), manteniendo la información del documento original.
